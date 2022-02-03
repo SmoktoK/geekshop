@@ -10,7 +10,6 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
 
-import json
 import os
 from pathlib import Path
 
@@ -46,6 +45,7 @@ INSTALLED_APPS = [
     "basketapp",
     "adminapp",
     "social_django",
+    "ordersapp",
 ]
 
 # Auth model
@@ -77,6 +77,7 @@ TEMPLATES = [
                 "mainapp.context_processors.basket",
                 "social_django.context_processors.backends",
                 "social_django.context_processors.login_redirect",
+                "django.template.context_processors.media",
             ],
         },
     },
@@ -183,6 +184,7 @@ AUTHENTICATION_BACKENDS = (
     "social_core.backends.github.GithubOAuth2",
 )
 
+import json
 
 with open(
     os.path.join(BASE_DIR, "tmp", "secrets", "github.json"), "r"
