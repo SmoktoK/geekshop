@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 import os
 from pathlib import Path
+import json
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -184,7 +185,6 @@ AUTHENTICATION_BACKENDS = (
     "social_core.backends.github.GithubOAuth2",
 )
 
-import json
 
 with open(
     os.path.join(BASE_DIR, "tmp", "secrets", "github.json"), "r"
