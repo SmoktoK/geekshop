@@ -64,12 +64,12 @@ MIDDLEWARE = [
 ]
 
 
-# if DEBUG:
-#     MIDDLEWARE.extend(
-#         [
-#             "debug_toolbar.middleware.DebugToolbarMiddleware",
-#         ]
-#     )
+if DEBUG:
+    MIDDLEWARE.extend(
+        [
+            "debug_toolbar.middleware.DebugToolbarMiddleware",
+        ]
+    )
 
 ROOT_URLCONF = "geekshop.urls"
 
