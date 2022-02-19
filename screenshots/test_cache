@@ -1,0 +1,15 @@
+До кеширования - 218.583 msec
+После кеширования - 165.874 msec
+Вычисление факториала - 451.458 msec
+Вычисление переменной - 345.870 msec
+LOW_CACHE = False - 226.337 msec
+LOW_CACHE = True - 165.827 msec
+No Cache contact - 163.240 msec
+Cache contact - 35.004 msec
+
+
+
+
+
+
+
